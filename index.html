@@ -419,6 +419,58 @@
     flex-shrink: 0;
   }
 
+  /* Gift registry section */
+  .gifts-section {
+    margin: 5px 0 15px;
+  }
+  .gifts-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.3rem, 3.5vw, 1.7rem);
+    color: var(--text-dark);
+    margin-bottom: 8px;
+  }
+  .gifts-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #5a3a1a;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .gifts-buttons {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .gift-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #c8607a, #e0829a);
+    color: white;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    box-shadow: 0 6px 20px rgba(200,96,122,0.45);
+    transition: all 0.3s ease;
+    cursor: none;
+    line-height: 1.3;
+    text-align: left;
+  }
+  .gift-btn:hover {
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 10px 30px rgba(200,96,122,0.65);
+  }
+  .gift-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+  }
+
   /* Forms button */
   .forms-btn {
     display: inline-flex;
@@ -697,6 +749,26 @@ function toggleMusic() {
         </svg>
         Ver en Google Maps
       </a>
+      <div class="divider">✦ 🎁 ✦</div>
+
+      <div class="gifts-section">
+        <div class="gifts-title">Mesa de Regalos</div>
+        <p class="gifts-text">
+          ¡Tu presencia es el mejor regalo!<br>
+          <span style="font-size:0.95em">Si gustas honrarlos con un detalle especial, aquí encontrarás algunas ideas pensadas con amor para ellos.</span>
+        </p>
+        <div class="gifts-buttons">
+          <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51958715" target="_blank" class="gift-btn">
+            <span class="gift-icon">🎀</span>
+            <span>Mesa de<br><strong>Regina</strong></span>
+          </a>
+          <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51958724" target="_blank" class="gift-btn">
+            <span class="gift-icon">🎁</span>
+            <span>Mesa de<br><strong>Damián</strong></span>
+          </a>
+        </div>
+      </div>
+
       <div class="divider">✦ ✨ ✦</div>
 
       <p style="font-family:'Cormorant Garamond',serif; font-style:italic; font-weight:700; color:#5a3a1a; font-size:1.1rem; margin-bottom:15px">
